@@ -1,0 +1,29 @@
+<p>Your diet plan is as follows:</p>
+
+<!-- <button (click)="displayFoodItem()">Click to view plan </button> -->
+<div>
+    <table class="">
+        <thead class="thead">
+            <tr>
+                <th>weekDay</th>
+                <th>mealType</th>
+                <th>foodItem</th>
+                <th>quantity</th>
+                <th>calories1</th>
+                <th>fats1</th>
+                <th>proteins1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of food">
+                <td>{{item.value.weekDay}}</td>
+                <td>{{item.value.mealType}}</td>
+                <td>{{item.value.foodItem}}</td>
+                <td>{{item.value.quantity}}</td>
+                <td>{{item.value.calories1}}</td>
+                <td>{{item.value.fats1}}</td>
+                <td>{{item.value.proteins1}}</td>
+            </tr> 
+        </tbody>
+    </table>
+</div> 

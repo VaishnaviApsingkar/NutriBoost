@@ -1,0 +1,53 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.age,
+.gender,
+.height,
+.weight,
+.exercise{
+
+    width:100px;
+    box-sizing: 800px;
+    position: relative;
+}
+    
+
+#details{
+    margin:40px auto;
+    width:30%;
+
+
+}
+
+  input[type="age"],
+  input[type="height"],
+  input[type="weight"],
+  input[type="gender"],
+  input[type="exercise"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  
+
+  table,th,td{
+    border: 1px solid black;
+    width: responsive; 
+    size: relative;
+}
+
+header{
+    height:60px; 
+    background-color:teal; 
+    text-align:center; 
+    font-size:40px; 
+    font-style: normal; 
+    position: sticky;
+    top:0;
+  }

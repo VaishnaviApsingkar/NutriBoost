@@ -1,0 +1,112 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+
+.login {
+    text-size-adjust: 10px;
+    font-style: normal;
+    border-width: 10rem;
+    padding: 3rem;
+    width:350px; 
+    margin:0 auto;
+    background-color: rgb(173, 213, 231);
+    /* background-image: url('/loginsignup.jpg'); */
+    background-size: 70%;
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    border-radius: 1.5rem ;
+}
+
+
+.login-page{
+  margin:0 0 0 0;
+
+}
+
+.login>h2{
+  font-size: 2.1rem;
+}
+
+/* .body{
+  background-image: url(/bg.jpg);
+} */
+
+.login-heading{
+  text-align: center;
+}
+
+
+/* code for profile */
+
+.profile-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="age"],
+  input[type="height"],
+  input[type="weight"],
+  input[type="firstname"],
+  input[type="lastname"],
+  input[type="username"],
+  input[type="password"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button .switchoption {
+    background-color: brown;
+  }
+  
+  .profile-details {
+    margin-top: 40px;
+  }
+  
+  .profile-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form .message{
+    margin:15px 0 0;
+    color: #bcbcbc;
+    font-size: 12px;
+  }
+  
+  header{
+    height:3rem; 
+    background-color:teal; 
+    text-align:center; 
+    font-size:3rem; 
+    font-style: normal; 
+    position: sticky;
+    top:0;
+    padding: 1.1rem;
+  }
+

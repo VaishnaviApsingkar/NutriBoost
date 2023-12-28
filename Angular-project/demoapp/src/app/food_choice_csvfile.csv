@@ -1,0 +1,42 @@
+﻿food_id,food_item,quantity,calories
+1,Capellini,100 g,339 cal
+2,Cappelletti,100 g,93 cal
+3,Cellophane Noodles,100 g,351 cal
+4,Cheese Tortellini,100 g,393 cal
+5,Chinese Noodles,100 g,351 cal
+6,Egg Noodles,100 g,384 cal
+7,"Egg Noodles, cooked",100 g,138 cal
+8,Farfalle,100 g,359 cal
+9,Fettuccine,100 g,359 cal
+10,Fusilli,100 g,354 cal
+11,Glass Noodles,100 g,340 cal
+12,Homemade Lasagna,100 g,250 cal
+13,Instant Noodles,100 g,257 cal
+14,Lasagne Sheets,100 g,356 cal
+15,Linguine,100 g,359 cal
+16,Macaroni,100 g,359 cal
+17,"Macaroni, cooked",100 g,128 cal
+18,Mostaccioli,100 g,154 cal
+19,Orecchiette,100 g,273 cal
+20,Orzo,100 g,362 cal
+21,Pasta,100 g,365 cal
+22,"Pasta, cooked",100 g,141 cal
+23,Penne Pasta,100 g,359 cal
+24,Penne Rigate,100 g,352 cal
+25,Pierogi,100 g,167 cal
+26,Ravioli,100 g,242 cal
+27,Rigatoni,100 g,353 cal
+28,Rotini,100 g,371 cal
+29,Shirataki noodles,100 g,541 cal
+30,Soy Noodles,100 g,348 cal
+31,Spagetti,100 g,353 cal
+32,"Spaghetti, cooked",100 g,131 cal
+33,Spinach Tortellini,100 g,301 cal
+34,Spätzle,100 g,218 cal
+35,Tagliatelle,100 g,346 cal
+36,Tortellini,100 g,273 cal
+37,Vermicelli,100 g,331 cal
+38,Whole Grain Noodles,100 g,342 cal
+39,Whole Grain Spaghetti,100 g,337 cal
+40,Whole Wheat Spaghetti cooked,100 g,148 cal
+41,Yuba,100 g,176 cal

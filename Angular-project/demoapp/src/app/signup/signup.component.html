@@ -1,0 +1,29 @@
+<header>NutriBoost</header>
+<div class="register">
+    <h2 class="signup-heading"> SIGN UP</h2>
+    <form class="login-form">
+      <label> FirstName: </label>
+      <br>
+      <input type="FirstName" [(ngModel)]="firstname" name="firstname" required><br><br>
+      
+      <label> LastName: </label>
+      <br>
+      <input type="LastName" [(ngModel)]="lastname" name="lastname" required><br><br>
+     
+      <label> Username: </label>
+      <br>
+      <input type="UserName" [(ngModel)]="username" name="username" required><br><br>
+      
+      <label> Password: </label>
+      <br>
+      <input type="Password" [(ngModel)]="password" name="password" minlength="5" maxlength="15" box-length="300px"
+        required><br>
+
+      <h4>Click here to create account</h4>
+      <button (click)="postUserRegistration()">Sign Up</button>
+
+      <p class="message">Already existing User?<a routerLink="/login">Login</a></p>
+      
+      <!-- (click)="switchTab()" -->
+    </form>
+  </div>

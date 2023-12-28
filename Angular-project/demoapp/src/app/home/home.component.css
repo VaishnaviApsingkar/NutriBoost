@@ -1,0 +1,85 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+
+#selections{
+    display:flex;
+    justify-content: center;
+} 
+
+.message{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#meal_select, #food_item_select{
+    margin:100px;
+}
+
+header{
+    height:3rem; 
+    background-color:teal; 
+    text-align:center; 
+    font-size:3rem; 
+    font-style: normal; 
+    position: sticky;
+    top:0;
+    padding: 1.1rem;
+  }
+
+
+.flex-parent{
+    display: flex;
+    margin: 5rem;
+    /* height: 15rem;
+    width: 15rem;
+    width: auto; */
+}
+
+.carddiv:hover{
+    box-shadow: 200;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+button.margin-right{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+button{
+    background-color: lightgrey;
+
+}
+
+#add{
+    display:flex;
+    justify-content: center;
+    margin: left 50%;  
+}
+
+/* button.hover{
+    box-shadow:gray;
+} */
+
+/*form dropdown*/
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+
+
+.carddiv{
+    background: rgb(174, 238, 207);
+    border-radius: 2rem;
+    height: 8rem;
+    width: 20rem;
+    /* color: white; */
+    object-fit: cover;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+

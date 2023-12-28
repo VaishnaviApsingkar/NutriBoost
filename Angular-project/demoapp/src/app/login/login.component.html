@@ -1,0 +1,78 @@
+<header>NutriBoost</header>
+  <br>
+  <!-- <marquee>
+    <h3>Hello there</h3>
+  </marquee> -->
+  <div class="login-page">
+  
+    <div class="login" >
+      
+      <h2 class="login-heading">LOGIN</h2>
+      <form class="login-form">
+        <label> Username: </label>
+        <br>
+        <input type="text" [(ngModel)]="username" name="username" required><br><br>
+  
+        <label> Password: </label>
+        <br>
+        <input type="password" [(ngModel)]="password" name="password" minlength="5" maxlength="15" required><br>
+  
+        <h4>Click here to login</h4>
+        <button (click)="postCheckLogin()">Login</button>
+        <p class="message">Not Registered?<a routerLink="/signup">Register Here</a></p>
+        
+      </form>
+    </div>
+    
+      
+  
+  </div>
+  
+  <br>
+  
+  
+  
+  <!-- start of profile section code -->
+  <!--
+  <div class="profile-container">
+    <h1>User Profile</h1>
+    <form (ngSubmit)="saveProfile()" #profileForm="ngForm">
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" [(ngModel)]="user.age" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="weight">Weight (in Kg)</label>
+        <input type="weight" id="weight" name="weight" [(ngModel)]="user.weight" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="height">Height (in m)</label>
+        <input type="height" id="height" name="height" [(ngModel)]="user.height" required>    
+      </div>
+  
+      <button type="submit">Save Profile</button>
+    </form>
+  
+    <div class="profile-details">
+      <h2>Profile Details are as follows:</h2>
+      <p><strong> Email:</strong> {{ user.email }}</p>
+      <p><strong> Age:</strong> {{ user.age }}</p>
+      <p><strong> Weight:</strong> {{ user.weight }}</p>
+      <p><strong> Height</strong> {{ user.height }}</p>
+    </div>
+  
+  </div>
+  -->
+  
+  <!-- end of profile section -->
+  
+  
+  
+  <router-outlet></router-outlet>
