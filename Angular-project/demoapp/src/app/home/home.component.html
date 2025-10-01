@@ -4,88 +4,70 @@
     <title>NutriBoost</title>
 </head>
 
-    <header>Welcome to NutriBoost 
-      <!-- <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"
-            style="height:30px; width:30px; border-radius:50%; right:15px; top:20px; position:absolute;" onclick="openProfile()" ></a>     -->
-      </header>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to NutriBoost</h1>
+        </div>
+    </header>
 
 <div class="userOptions">
    
-    <div class="flex-parent jc-center" >
-        <div class="carddiv" routerLink="/createDietPlan">
-            <p class="message">Create diet plan <!-- <a routerLink="/createDietPlan">Create</a> --></p>
+    <div class = "card-container">
+        <!-- <div class="carddiv" routerLink="/createDietPlan">
+            <p class="message">Create diet plan </p>
         </div> 
-    </div>
 
-    <div class="flex-parent jc-center" >
         <div class="carddiv" routerLink="/viewDietPlan">
-            <p class="message">View diet plan<!-- <a routerLink="/viewDietPlan">View</a> --></p>
+            <p class="message">View diet plan</p>
         </div>
-    </div>
-        
-    
-    <!-- <div class="flex-parent jc-center" >
-        <div class="carddiv" routerLink="/bmi">
-            <p class="message">Calculate your BMI</p>
-        </div>
-    </div>  -->
-    <br>
-    <br>
-</div>
 
-    <!--
-    <div id="selections">
-    <form>
-        <div id="week_select">
-        <h5>Select the day of the week</h5>
-        <select  name="demooption" id="#" style="position:absolute;">
-            <option selected="selected" value="one">Monday</option>
-            <option value="two">Tuesday</option>
-            <option value="three">Wednesday</option>
-            <option value="four">Thursday</option>
-            <option value="five">Friday</option>
-            <option value="six">Saturday</option>
-            <option value="seven">Sunday</option>
-        </select>
-    
+        <div class="carddiv" routerLink="/viewStatistics">
+            <p class="message">View Statistics</p>
         </div>
-    
         
-        <div id="meal_select">
-            <h5>Select the meal type</h5>
-            <select name="demooption" id="#" style="position:absolute;">
-                <option selected="selected" value="one">Breakfast</option>
-                <option value="two">Lunch</option>
-                <option value="three">Dinner</option>
-                <option value="four">None</option>
-            </select>
-        </div>
-    
-       <!--<div>
-            <mat-form-field>
-                <mat-select >
-                    <mat-option value="item" *ngFor="let food_item of food_choice">
-                        {{food_item}}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
-            
+        <div class="carddiv" routerLink="/fooditems">
+            <p class="message">View food items</p>
         </div> -->
-    
-       <!--<div class="food_item_select">
-            <h5>Select the food items</h5>
-            <select name="demooption" id="#" style="position:absolute;">
-                <option selected="selected" value="one">Food item 1</option>
-                <option value="two">Food item 2 </option>
-                <option value="three">Food item 3 </option>
-                <option value="four">Food item 4 </option>
-            </select>
+
+        <!-- Create Diet Plan Card -->
+        <div class="carddiv" routerLink="/createDietPlan">
+            <div class="card-header">Create diet plan</div>
+            <div class="card-body">
+            <p class="subtitle">Plan your meals and track nutrition.</p>
+            <button class="card-btn">Start</button>
+            </div>
         </div>
 
-    </form>
+        <!-- View Diet Plan Card -->
+        <div class="carddiv" routerLink="/viewDietPlan">
+            <div class="card-header">View diet plan</div>
+            <div class="card-body">
+            <p class="subtitle">Check and update your existing plans.</p>
+            <button class="card-btn">View</button>
+            </div>
+        </div>
+
+        <!-- View Statistics Card -->
+        <div class="carddiv" routerLink="/viewStatistics">
+            <div class="card-header">View Statistics</div>
+            <div class="card-body">
+            <p class="subtitle">Analyze your progress with reports.</p>
+            <button class="card-btn">Check</button>
+            </div>
+        </div>
+
+        <!-- View Food Items Card -->
+        <div class="carddiv" routerLink="/fooditems">
+            <div class="card-header">View food items</div>
+            <div class="card-body">
+            <p class="subtitle">Explore nutrition info for foods.</p>
+            <button class="card-btn">Browse</button>
+            </div>
+        </div>
     </div>
+    
     <br>
     <br>
-   
 </div>
--->
+
+    

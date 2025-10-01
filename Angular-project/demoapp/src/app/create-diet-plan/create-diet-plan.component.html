@@ -2,8 +2,9 @@
 <div *ngIf="!switch">
 <div class="details" style="width:350px; margin:0 auto;" >
     
-    <h3> Enter details</h3>
+    
     <form class="details-form">
+      <h1> Enter below details</h1>
       <label> Gender: </label>
       <br>
       <input type="text" [(ngModel)]="gender" name="gender" required><br><br>
@@ -24,71 +25,8 @@
       <br>
       <input type="text" [(ngModel)]="isExercise" name="exercise" required><br><br>
 
-      <!--<label> uId</label>
-      <br>
-      <input type="number" [(ngModel)]="uId" name="uId" required>-->
-    
-      
-    <!--  <option value="one">1 to 3</option>
-            <option value="two">4 to 8</option>
-            <option value="three">9 to 13</option>
-            <option value="four">14 to 18</option>
-            <option value="five">19 to 30</option>
-            <option value="six">31 to 50</option>
-            <option value="seven">50 above</option>
-      -->
-    <!--<div id="age">
-        <label>Select the Age Group</label>
-        <select name="demooption" id="#" [(ngModel)]="age"  style="position:absolute; width:200px;" >
-            <option value="none" selected disabled hidden>Select age group</option>
-            <option value="one">1 to 3</option>
-            <option value="two">4 to 8</option>
-            <option value="three">9 to 13</option>
-            <option value="four">14 to 18</option>
-            <option value="five">19 to 30</option>
-            <option value="six">31 to 50</option>
-            <option value="seven">50 above</option>
-        </select>
-    </div>-->
-    <!--<div id="age">
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" [(ngModel)]="age" step="1" min="0" placeholder="Enter age" required>
-    </div>
-    <br>
-    <div id="gender">
-        <label>Gender</label>
-        <select name="demooption" id="#" [(ngModel)]="gender" style="position:absolute;" placeholder="None " required>
-            <option value="none" selected disabled hidden>Select gender</option>
-            <option value="one">Male</option>
-            <option value="two">Female</option>
-        </select>
-    </div>
-    <br>   
-    <div id="height">
-        <label for="Height">Height (in m):</label>
-        <input type="number" id="height" name="height" [(ngModel)]="height" step="0.01" min="0" placeholder="Select/Enter height" required>
-    </div>
-    <br>
-    <div id="weight">
-        <label for="Weight">Weight (in kg):</label>
-        <input type="number" id="weight" name="weight" [(ngModel)]="weight" step="0.01" min="0" placeholder="Select/Enter weight" required>
-    </div>
-    <br>
-    <div id="exercise">
-        <label>Exercise?</label>
-        <select name="demooption" id="#" [(ngModel)]="exercise" style="position:absolute;" placeholder="Select option" required>
-            <option value="none" selected disabled hidden>  </option>
-            <option value="one">Yes</option>
-            <option value="two">No</option>
-        </select>
-    </div>
-    <div id="uId">
-        <label for="uId">uId</label>
-        <input type="number" id="uId" name="UId" [(ngModel)]="uId" step="1" min="0" placeholder="Enter uId" required>
-    </div>
--->
-
-    <h4>Click here to save details:</h4>
+   
+    <h4>Save details and proceed to create diet plan:</h4>
     <button (click)="saveProfile()">Save details</button>
     <!--<p class="message">Not Registered?<a routerLink="/dietPlan">Register Here</a></p> -->
     <button (click)="switchChange()">Proceed</button>    
@@ -99,22 +37,17 @@
 <!-- <div>
     <h1>Let's add food items to plan...</h1>
 </div> -->
+
 <br><br>
 <div *ngIf="switch"> 
-<div style="width:350px; margin:0 auto; border: 10px;" >
+<div class="form-card" ><!--style="width:350px; margin:0 auto; border: 10px;" -->
+    
     <form class="details-form">
-        <!-- <label> Week day </label>
-        <br>
-        <input type="text" [(ngModel)]="week_day" name="week_day" required><br><br>
-        
-        <label> Meal type  </label>
-        <br>
-        <input type="text" [(ngModel)]="meal_type" name="meal_type" required><br><br> -->
-        
+        <h1>Let's add food items to your plan...</h1>
             <div id="week_select">
             <label>Select the day of the week</label>
             <br><br>
-            <select  [(ngModel)] = "week_day" name="demooption" id="#" style="position:absolute;">
+            <select  [(ngModel)] = "week_day" name="demooption" id="#"> <!--style="position:absolute;" -->
                 <option selected="selected" placeholder="Select day" value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
                 <option value="Wednesday">Wednesday</option>
@@ -127,7 +60,7 @@
             <div id="meal_select">
                 <label>Select the meal type</label>
                 <br><br>
-                <select [(ngModel)] = "meal_type" name="demooption" id="#" style="position:absolute;">
+                <select [(ngModel)] = "meal_type" name="demooption" id="#" ><!--style="position:absolute;"-->
                     <option selected="selected" placefolder="Select meal type" value="Breakfast">Breakfast</option>
                     <option value="Lunch">Lunch</option>
                     <option value="Dinner">Dinner</option>
@@ -155,7 +88,7 @@
         <label> Proteins</label>
         <br>
         <input type="number" [(ngModel)]="proteins_1" name="proteins" required>
-        <h4>Click to add item to diet plan:</h4>
+        <h4>Save details to add item to diet plan</h4>
     <button (click)="saveFoodItem()">Save details</button>
         </form>
     </div>

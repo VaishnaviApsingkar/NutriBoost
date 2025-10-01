@@ -1,5 +1,8 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin :0;
+    padding: 0;
+    box-sizing: border-box; */
 }  
 
 #selections{
@@ -18,15 +21,32 @@
 
 header{
     height:3rem; 
-    background-color:teal; 
+    /* background-color:teal;  */
     text-align:center; 
     font-size:3rem; 
     font-style: normal; 
     position: sticky;
     top:0;
-    padding: 1.1rem;
+    /* padding: 1.1rem; */
+    padding: 1rem 0 2.5rem 0;  /* extra bottom padding */
+    width: 100%;
+    background: linear-gradient(90deg, #009688, #00796b);;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
 
 .flex-parent{
     display: flex;
@@ -36,9 +56,7 @@ header{
     width: auto; */
 }
 
-.carddiv:hover{
-    box-shadow: 200;
-}
+
 
 .jc-center{
     justify-content: center;
@@ -60,26 +78,82 @@ button{
     margin: left 50%;  
 }
 
-/* button.hover{
-    box-shadow:gray;
-} */
-
 /*form dropdown*/
 
 .example-container mat-form-field + mat-form-field {
     margin-left: 8px;
   }
 
-
-.carddiv{
-    background: rgb(174, 238, 207);
-    border-radius: 2rem;
-    height: 8rem;
-    width: 20rem;
-    /* color: white; */
-    object-fit: cover;
-    text-align: center;
-    justify-content: center;
-    margin: 2rem;
+/* Card Styles */
+.carddiv {
+    background: #e0f2f1; /* light teal background *//* #e8d9ff;  soft purple background */
+    border-radius: 1rem;
+    width: 18rem;
+    min-height: 12rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
   }
 
+/* Hover Effect */
+.carddiv:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Grid Layout for Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*repeat(2, 1fr); 3 cards per row */
+    gap: 2rem;
+    justify-content: center;
+    padding: 4 rem;/*4rem;*/
+    justify-items: center;
+    margin-top: 10%; 
+}
+
+/* Header */
+.card-header {
+    background:  #009688; /* strong teal */ /*#9b59b6; stronger purple */
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+/* Body */
+.card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+
+/* Button */
+.card-btn {
+    background-color: #009688;/*#9b59b6;*/
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .card-btn:hover {
+    background-color: #00796b;/*#7d3c98;*/
+  }
+
+
+  

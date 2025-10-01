@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit{
  
+
   constructor(private dataSrc:DemoserviceService, private router:Router){}
 
   ngOnInit(): void {

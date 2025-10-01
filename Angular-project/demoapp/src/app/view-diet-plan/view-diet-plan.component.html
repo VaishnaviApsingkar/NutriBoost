@@ -1,6 +1,5 @@
-<p>Your diet plan is as follows:</p>
+<!-- <p>Your diet plan is as follows:</p>
 
-<!-- <button (click)="displayFoodItem()">Click to view plan </button> -->
 <div>
     <table class="">
         <thead class="thead">
@@ -16,14 +15,45 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of food">
-                <td>{{item.value.weekDay}}</td>
-                <td>{{item.value.mealType}}</td>
-                <td>{{item.value.foodItem}}</td>
-                <td>{{item.value.quantity}}</td>
-                <td>{{item.value.calories1}}</td>
-                <td>{{item.value.fats1}}</td>
-                <td>{{item.value.proteins1}}</td>
+                <td>{{item.weekDay}}</td> 
+                <td>{{item.mealType}}</td>
+                <td>{{item.foodItem}}</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.calories1}}</td>
+                <td>{{item.fats1}}</td>
+                <td>{{item.proteins1}}</td>
             </tr> 
         </tbody>
     </table>
-</div> 
+</div>  -->
+
+<div class="diet-plan-container">
+    <h2 class="diet-plan-heading">🥗 Your Personalized Diet Plan</h2>
+    <p class="diet-plan-subtext">Track your meals and nutrition goals easily</p>
+  
+    <table class="diet-table">
+      <thead>
+        <tr>
+          <th>Week Day</th>
+          <th>Meal Type</th>
+          <th>Food Item</th>
+          <th>Quantity</th>
+          <th>Calories</th>
+          <th>Fats</th>
+          <th>Proteins</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of food">
+          <td>{{item.weekDay}}</td>
+          <td>{{item.mealType}}</td>
+          <td>{{item.foodItem}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.calories1}}</td>
+          <td>{{item.fats1}}</td>
+          <td>{{item.proteins1}}</td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+  

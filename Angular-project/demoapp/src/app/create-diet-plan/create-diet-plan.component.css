@@ -1,4 +1,4 @@
-*{
+/* *{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -50,4 +50,103 @@ header{
     font-style: normal; 
     position: sticky;
     top:0;
+  } */
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
   }
+  
+  /* Background */
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #e8fdf5, #f0fff4);
+  }
+  
+  /* Header */
+  header {
+    height: 70px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Card container */
+  .details, .form-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h1, h3, h4 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: teal;
+    /* font-weight: bold; */
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Inputs & dropdowns */
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #006666;
+  }
+  
+  /* Special styling for Proceed */
+  .details button:last-of-type {
+    background-color: #007bff;
+  }
+  .details button:last-of-type:hover {
+    background-color: #0056b3;
+  }
+  
+  /* White card */
+.form-card {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}

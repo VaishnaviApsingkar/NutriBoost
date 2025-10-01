@@ -1,0 +1,67 @@
+/* In styles.css or styles.scss */
+@import '~ag-grid-community/styles/ag-grid.css';
+
+/* Styling for the search section */
+.search-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px; /* Space between elements */
+  }
+  
+  .search-section label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .search-section select,
+  .search-section input,
+  .search-section button {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .search-section input {
+    flex-grow: 1; /* Make the input take the remaining width */
+    min-width: 200px;
+  }
+  
+  .search-section button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+  }
+  
+  .search-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the table header */
+  .ag-theme-alpine .ag-header-cell {
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  /* Styling for the ag-grid table */
+  .ag-theme-alpine {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+  }
+  
+  .ag-theme-alpine .ag-row {
+    font-size: 14px;
+  }
+  
+  .ag-theme-alpine .ag-row-even {
+    background-color: #f9f9f9;
+  }
+  
+  .ag-theme-alpine .ag-row-odd {
+    background-color: #ffffff;
+  }
+  
+  

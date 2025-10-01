@@ -1,12 +1,24 @@
-<header>NutriBoost</header>
-<div class="register">
-    <h2 class="signup-heading"> SIGN UP</h2>
-    <form class="login-form">
-      <label> FirstName: </label>
+<!-- <header>NutriBoost</header> -->
+
+<header class="app-header">
+  <h1>NutriBoost</h1>
+</header>
+
+
+<!-- <div class="register"> -->
+<div class="auth-container">
+  <div class = "auth-card">
+    <!-- <h2 class="signup-heading"> SIGN UP</h2> -->
+    <h2 class="auth-title">Create Account ✨</h2>
+    <p class="auth-subtitle">Join NutriBoost and start your journey</p>
+
+    <!-- <form class="login-form"> -->
+    <form class="auth-form">  
+      <label> First Name: </label>
       <br>
       <input type="FirstName" [(ngModel)]="firstname" name="firstname" required><br><br>
       
-      <label> LastName: </label>
+      <label> Last Name: </label>
       <br>
       <input type="LastName" [(ngModel)]="lastname" name="lastname" required><br><br>
      
@@ -19,10 +31,13 @@
       <input type="Password" [(ngModel)]="password" name="password" minlength="5" maxlength="15" box-length="300px"
         required><br>
 
-      <h4>Click here to create account</h4>
-      <button (click)="postUserRegistration()">Sign Up</button>
+      <!-- <h4>Click here to create account</h4> -->
+      <button class="btn-primary" (click)="postUserRegistration()">Sign Up</button>
 
-      <p class="message">Already existing User?<a routerLink="/login">Login</a></p>
+      <!-- <p class="message">Already existing User?<a routerLink="/login">Login</a></p> -->
+      <p class="switch-text">
+        Already have an account? <a routerLink="/login">Login</a>
+      </p>
       
       <!-- (click)="switchTab()" -->
     </form>

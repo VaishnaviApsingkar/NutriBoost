@@ -1,14 +1,22 @@
-<header>NutriBoost</header>
+<!-- <header>NutriBoost</header> -->
+
+<header class="app-header">
+  <h1>NutriBoost</h1>
+</header>
+
   <br>
-  <!-- <marquee>
-    <h3>Hello there</h3>
-  </marquee> -->
-  <div class="login-page">
-  
-    <div class="login" >
+
+  <!-- <div class="login-page"> -->
+    <div class="auth-container">
+      <div class="auth-card">
+
+    <!-- <div class="login" > -->
       
-      <h2 class="login-heading">LOGIN</h2>
-      <form class="login-form">
+      <!-- <h2 class="login-heading">LOGIN</h2> -->
+      <h2 class="auth-title">Welcome Back 👋</h2>
+      <p class="auth-subtitle">Login to continue your journey</p>
+      <!-- <form class="login-form"> -->
+      <form class="auth-form">
         <label> Username: </label>
         <br>
         <input type="text" [(ngModel)]="username" name="username" required><br><br>
@@ -17,9 +25,12 @@
         <br>
         <input type="password" [(ngModel)]="password" name="password" minlength="5" maxlength="15" required><br>
   
-        <h4>Click here to login</h4>
-        <button (click)="postCheckLogin()">Login</button>
-        <p class="message">Not Registered?<a routerLink="/signup">Register Here</a></p>
+        <!-- <h4>Click here to login</h4> -->
+        <button class="btn-primary" (click)="postCheckLogin()">Login</button>
+        <!-- <p class="message">Not Registered?<a routerLink="/signup">Register Here</a></p> -->
+        <p class="switch-text">
+          New here? <a routerLink="/signup">Create an account</a>
+        </p>        
         
       </form>
     </div>

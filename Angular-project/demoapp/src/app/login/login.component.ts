@@ -9,6 +9,7 @@ import { GlobaldataService } from '../globaldata.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
+
   
   constructor(private dataSrc:DemoserviceService, private router:Router, private globalid:GlobaldataService){}
 

@@ -5,6 +5,8 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { CreateDietPlanComponent } from './create-diet-plan/create-diet-plan.component';
 import { ViewDietPlanComponent } from './view-diet-plan/view-diet-plan.component';
+import { ViewStatisticsComponent } from './view-statistics/view-statistics.component';
+import { FoodItemsComponent} from './food-items/food-items.component';
 
 
 const routes: Routes = [
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path:'login', component:LoginComponent },
   { path:'signup', component:SignupComponent },
   { path:'createDietPlan', component:CreateDietPlanComponent },
-  { path: 'viewDietPlan', component:ViewDietPlanComponent}
+  { path: 'viewDietPlan', component:ViewDietPlanComponent},
+  { path: 'viewStatistics' , component:ViewStatisticsComponent},
+  { path: 'fooditems', component: FoodItemsComponent},
  
 ];
 

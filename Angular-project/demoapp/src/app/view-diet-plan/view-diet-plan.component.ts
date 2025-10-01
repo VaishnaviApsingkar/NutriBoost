@@ -16,6 +16,8 @@ export class ViewDietPlanComponent implements OnInit{
   userId:any;
   food:any=[];
 
+  searchKeyword: String=''; //global search
+
 
   constructor (private dataSrc:DemoserviceService, private router:Router, private globalid:GlobaldataService, private http:HttpClient){} // added http // for fetching data from db fooditemexcel
   
@@ -28,23 +30,45 @@ export class ViewDietPlanComponent implements OnInit{
 
     }
 
-    displayFoodItem(){
-      let data={
-        fId:parseInt(this.userId)
-      }
-        //this.dataSrc.displayFoodItems(data).subscribe((x)=>{console.log(x)});
-        //this.router.navigateByUrl("/");
-        this.dataSrc.displayFoodItems(this.fId).subscribe(
-          (response) => {
-            this.food.push(response);
-            console.log(response);
-          },
-          // (error) => {
-          //   console.error('Error fetching data:', error);
-          // }
-        );
+    // displayFoodItem(){
+    //   let data={
+    //     fId:parseInt(this.userId)
+    //   }
+    //     //this.dataSrc.displayFoodItems(data).subscribe((x)=>{console.log(x)});
+    //     //this.router.navigateByUrl("/");
+    //     this.dataSrc.displayFoodItems(this.fId).subscribe(
+    //       (response) => {
+    //         this.food.push(response);
+    //         // this.food = response;
+    //         console.log(response);
+    //       },
+    //       // (error) => {
+    //       //   console.error('Error fetching data:', error);
+    //       // }
+    //     );
         
-        alert("Details displayed successfully");
+    //     alert("Details displayed successfully");
       
+    // }
+
+    displayFoodItem() {
+      const userId: number = parseInt(this.userId, 10);  // ensure numeric ID
+    
+      this.dataSrc.displayFoodItems(userId).subscribe(
+        (response: any) => {
+          console.log("API response:", response);
+  
+          //  Backend wraps the list in { key, value }
+          this.food = response.value;
+    
+          // If backend ever returns array directly, use:
+          // this.food = response;
+        },
+        (error) => {
+          console.error("Error fetching data:", error);
+        }
+      );
     }
+    
+    
 }

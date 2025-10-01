@@ -1,0 +1,120 @@
+<h1>Asset dashboard!</h1>
+<div class="dashboard-container">
+    <!-- <h2>Asset Compliance Dashboard</h2> -->
+  
+    <!-- Pie Chart for Compliance Status -->
+    <div class="chart-section">
+      <h3>Compliance Status Distribution</h3>
+      <div class="chart-content">
+        <ngx-charts-pie-chart
+            [view]="[500, 300]"
+            [results]="complianceStatusData"
+            [legend]="true"
+            [doughnut]="true"
+            [labels]="true">
+        </ngx-charts-pie-chart>
+      </div>
+    </div>
+  
+    <!-- Bar Chart for Asset Types -->
+    <div class="chart-section">
+      <h3>Asset Types Distribution</h3>
+      <div class="chart-content">
+        <ngx-charts-bar-vertical
+            [view]="[500, 300]"
+            [results]="assetTypesData"
+            [legend]="true"
+            [xAxis]="true"
+            [yAxis]="true"
+            [showDataLabel]="true">
+        </ngx-charts-bar-vertical>
+      </div>
+    </div>
+
+    <!-- Bubble chart -->
+    <!-- 
+    <div class="chart-section">
+    <h3>OU-wise Compliance and Brand, Asset Enumeration</h3>
+    <div class="chart-content">
+      <ngx-charts-bubble-chart
+        [view]="bubbleChartOptions.view"
+        [scheme]="bubbleChartOptions.colorScheme"
+        [results]="bubbleChartData"
+        [legend]="bubbleChartOptions.showLegend"
+        [legendPosition]="bubbleChartOptions.legendPosition"
+        [xAxis]="bubbleChartOptions.showXAxis"
+        [yAxis]="bubbleChartOptions.showYAxis"
+        [xAxisLabel]="bubbleChartOptions.xAxisLabel"
+        [yAxisLabel]="bubbleChartOptions.yAxisLabel">
+      </ngx-charts-bubble-chart>
+    </div> 
+    </div>-->
+
+    <!-- Bubble chart -->
+
+    <!-- 
+    <div class ="chart-section">
+    <h2>OU-wise Compliance and Brand, Asset Enumeration</h2>  
+    <div class="chart-content">
+        <ngx-charts-bubble-chart
+            [view]="bubbleChartOptions.view"
+            [scheme]="bubbleChartOptions.colorScheme"
+            [results]="bubbleChartData"
+            [legend]="bubbleChartOptions.showLegend"
+            [legendPosition]="bubbleChartOptions.legendPosition"
+            [xAxis]="bubbleChartOptions.showXAxis"
+            [yAxis]="bubbleChartOptions.showYAxis"
+            [xAxisLabel]="bubbleChartOptions.xAxisLabel"
+            [yAxisLabel]="bubbleChartOptions.yAxisLabel"
+            [tooltipDisabled]="false">
+        </ngx-charts-bubble-chart>
+    </div> -->
+    
+    <!-- odometer chart -->
+    <!-- 
+    <div class="chart-section">
+    <h3>Overall Compliance (%)</h3>
+    <div class="chart-content">
+        <ngx-gauge 
+        [type]="'semi'" 
+        [value]="gaugeValue" 
+        [label]="gaugeLabel"
+        [append]="'%'"
+        [foregroundColor]="'#5AA454'"
+        [backgroundColor]="'#EEE'"
+        [cap]="'round'"
+        [thick]="10"
+        [thresholds]="gaugeThresholds">
+        </ngx-gauge>   
+    </div> 
+    </div>-->
+    
+    <div class="chart-section">
+        <h3>Circular Chart</h3>
+        <div class="chart-content chart-label-container">
+            <div class="label-container">
+                <div *ngFor="let data of assetTypesDataFiltered" class="chart-label">
+                    <span [style.color]="customColorScheme.domain[assetTypesDataFiltered.indexOf(data) % customColorScheme.domain.length]">
+                        {{ data.name }}: {{ data.percentage.toFixed(2) }}%
+                    </span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <svg class="circular-chart"></svg> 
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- <div class="label-container">
+          <div *ngFor="let data of assetTypesDataFiltered" class="chart-label">
+              <span [style.color]="customColorScheme.domain[assetTypesDataFiltered.indexOf(data) % customColorScheme.domain.length]">
+                  {{ data.name }}: {{ data.percentage.toFixed(2) }}%
+              </span>
+          </div>
+      </div>
+      <div class="chart-container">
+        <svg class="circular-chart"></svg> 
+    </div> -->
+      
+</div>

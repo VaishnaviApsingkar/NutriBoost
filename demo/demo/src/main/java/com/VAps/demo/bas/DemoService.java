@@ -12,9 +12,11 @@ import com.VAps.demo.bao.Pair;
 import com.VAps.demo.bao.UserDetailsBao;
 import com.VAps.demo.bao.UserProfileBao;
 import com.VAps.demo.controller.FoodItemExcel;
+import com.VAps.demo.dao.AssetTraceability;
 import com.VAps.demo.dao.FoodChoice;
 import com.VAps.demo.dao.UserDetails;
 import com.VAps.demo.dao.UserProfile;
+import com.VAps.demo.repo.AssetTraceabilityRepository;
 import com.VAps.demo.repo.FoodChoiceRepository;
 import com.VAps.demo.repo.FoodItemExcelRepository;
 import com.VAps.demo.repo.UserDetailsRepository;
@@ -31,7 +33,11 @@ public class DemoService {
 	private FoodChoiceRepository foodChoiceRepository;
 	
 	@Autowired
+	private AssetTraceabilityRepository assetTraceabilityRepository;
+	
+	@Autowired
 	private FoodItemExcelRepository foodItemExcelRepository;
+	public List<FoodItemExcel> getAllFoodItems; //global search
 	
 	public Pair getUserDetails(UserDetailsBao user) {
 		Pair obj = new Pair();
@@ -125,7 +131,7 @@ public class DemoService {
 	public Pair getFoodItemExcelList() {
 		// TODO Auto-generated method stub
 		Pair obj1 = new Pair();
-		foodItemExcelRepository.getAllDetails();
+//		foodItemExcelRepository.getAllDetails();
 		obj1.setKey("Success");
 		obj1.setValue(foodItemExcelRepository.getAllDetails());
 	
@@ -148,4 +154,22 @@ public class DemoService {
 		
 	}
 	
+	public List<AssetTraceability> getAssets() {
+	    return assetTraceabilityRepository.findAll(); 
+	}
+	
+	
+	//global search
+	
+//	public List<FoodItemExcel> getAllFoodItems() {
+//		// TODO Auto-generated method stub
+//		
+//		return null;
+//	}
+//
+//	public List<FoodItemExcel> searchGlobal(String keyword) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+	// global search end
 }

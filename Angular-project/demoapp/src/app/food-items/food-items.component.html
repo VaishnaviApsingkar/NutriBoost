@@ -1,0 +1,105 @@
+<!-- <p>food-items works!</p> -->
+
+<!-- <h2>Food items details</h2> -->
+
+<!-- <div>
+    <table class="">
+        <thead class="thead">
+            <tr>
+                <th>foodId</th>
+                <th>foodItem</th>
+                <th>quantity</th>
+                <th>calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of foodItems">
+                <td>{{item.foodId}}</td>
+                <td>{{item.foodItem}}</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.calories}}</td>
+            </tr> 
+        </tbody>
+    </table>
+</div>   -->
+
+
+<!-- <div class="content" style="width: 100%; height: 100%;">
+    <ag-grid-angular 
+                    [rowData]="foodItems.value" 
+                    [columnDefs]="colDefs" 
+                    [defaultColDef]="defaultColDef"
+                
+    />
+</div> -->
+<!--  -->
+<!-- for global search -->
+<!-- <p>Search Food Items:</p> -->
+
+<!-- <label for="columnSelect">Search by:</label>
+<select id="columnSelect" [(ngModel)]="selectedColumn">
+    <option value="all">All</option>
+  <option value="name">Food Item</option>
+  <option value="quantity">Quantity</option>
+  <option value="id">Food ID</option>
+</select> -->
+
+<!-- <input
+  type="text"
+  [(ngModel)]="searchKeyword"
+  placeholder="Search across food item, quantity, and calories..."
+  style="margin-bottom: 10px; width: 100%;"
+/> -->
+<!-- <button (click)="clearSearch()" style="margin-left: 10px;">Clear</button> -->
+<!-- <button (click)="onSearch()" style="margin-left: 10px;">Search</button> -->
+
+
+
+<!-- <ag-grid-angular
+  style="width: 100%; height: 500px;"
+  class="ag-theme-alpine"
+  [rowData]="filteredFoodItems"
+  [columnDefs]="colDefs"
+  [defaultColDef]="defaultColDef">
+</ag-grid-angular> -->
+<!-- global search end -->
+
+<!-- <ag-grid-angular
+  style="width: 100%; height: 500px;"
+  class="ag-theme-alpine"
+  [rowData]="foodItems"
+  [columnDefs]="colDefs"
+  [defaultColDef]="defaultColDef">
+</ag-grid-angular> -->
+
+
+
+<h2>Food items details</h2>
+
+<!-- Search Section -->
+<div class="search-section">
+  <label for="columnSelect">Search by:</label>
+  <select id="columnSelect" [(ngModel)]="selectedColumn">
+    <option value="all">All</option>
+    <option value="name">Food Item</option>
+    <option value="quantity">Quantity</option>
+    <option value="id">Food ID</option>
+  </select>
+
+  <input
+    type="text"
+    [(ngModel)]="searchKeyword"
+    placeholder="Search across food item, quantity, and calories..."
+  />
+  
+  <button (click)="onSearch()">Search</button>
+</div>
+
+<!-- ag-Grid Table -->
+<ag-grid-angular
+  style="width: 100%; height: 500px;"
+  class="ag-theme-alpine"
+  [rowData]="foodItems"
+  [columnDefs]="colDefs"
+  [defaultColDef]="defaultColDef">
+</ag-grid-angular>

@@ -6,6 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": false, //  fooditemexcelimport
+    "moduleResolution": "node", //ag grid data table
+    "module": "esnext", // ag grid data table
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
