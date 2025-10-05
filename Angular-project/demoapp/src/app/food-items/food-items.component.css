@@ -1,5 +1,34 @@
 /* In styles.css or styles.scss */
-@import '~ag-grid-community/styles/ag-grid.css';
+/* @import '~ag-grid-community/styles/ag-grid.css'; */
+
+
+/* header styling */
+/* Header styling */
+.page-header {
+  text-align: center;
+  margin: 30px 0;
+  color: #006666;
+}
+
+.page-header .icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.page-header h2 {
+  font-size: 2rem;
+  color: #006666;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.page-header p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #4f868e;
+}
 
 /* Styling for the search section */
 .search-section {
@@ -11,19 +40,26 @@
   
   .search-section label {
     font-weight: bold;
-    margin-right: 5px;
+    font-size: 1rem;
+    /* margin-right: 5px; */
+    color: #005f5f;
   }
   
   .search-section select,
   .search-section input,
   .search-section button {
-    padding: 5px;
+    /* padding: 5px;
+    font-size: 14px; */
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
     font-size: 14px;
   }
   
   .search-section input {
-    flex-grow: 1; /* Make the input take the remaining width */
-    min-width: 200px;
+    /*flex-grow: 1; Make the input take the remaining width
+    min-width: 200px; */
+    width: 40%;
   }
   
   .search-section button {
@@ -33,6 +69,7 @@
     border: none;
     border-radius: 3px;
     padding: 8px 12px;
+    transition: background 0.3s;
   }
   
   .search-section button:hover {
@@ -64,4 +101,4 @@
     background-color: #ffffff;
   }
   
-  
+ 
